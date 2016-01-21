@@ -1,3 +1,16 @@
 ---
 layout: page
 ---
+
+<fieldset>
+<textarea id="editor">
+    function getCurrentApi() {
+        var apiPageStrIdx = window.location.href.indexOf('/#');
+
+        if (!~apiPageStrIdx) return '';
+
+        return window.location.href.substr(apiPageStrIdx + 2);
+    }
+</textarea>
+</fieldset>
+<button>Run Strategy</button>
